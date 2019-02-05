@@ -12,7 +12,7 @@ source "https://rubygems.org"
 # gem "github-pages", group: :jekyll_plugins
 
 # To upgrade, run `bundle update`.
-
+gem "html-proofer"
 gem "jekyll", "~> 3.8"
 gem "minimal-mistakes-jekyll"
 # The following plugins are automatically loaded by the theme-gem:
