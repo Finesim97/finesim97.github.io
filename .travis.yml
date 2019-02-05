@@ -3,9 +3,7 @@
 language: ruby
 rvm:
 - 2.4.1
-script: "./buildandtest.sh"
-after_success:
-  - ./push.sh
+script: "jgd -b master -r dev -u https://${GH_TOKEN}@github.com/Finesim97/finesim97.github.io.git"
 branches:
   only:
   - dev

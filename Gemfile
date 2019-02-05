@@ -12,6 +12,7 @@ source "https://rubygems.org"
 # gem "github-pages", group: :jekyll_plugins
 
 # To upgrade, run `bundle update`.
+gem require 'jgd'
 gem "html-proofer"
 gem "jekyll", "~> 3.8"
 gem "minimal-mistakes-jekyll"
