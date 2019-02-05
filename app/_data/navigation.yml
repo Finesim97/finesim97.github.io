@@ -1,0 +1,16 @@
+# main links
+main:
+    - title: "Home"
+      url: "/"
+    - title: "About"
+      url: /about
+    - title: "CV"
+      url: /assets/files/cv.pdf
+    - title: "Posts by Categories"
+      url: /categories
+    - title: "Posts by Tags"
+      url: /tags
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
