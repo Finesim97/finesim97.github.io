@@ -5,7 +5,7 @@ rvm:
 - 2.4.1
 script: "./buildandtest.sh"
 after_success:
-  - push.sh
+  - ./push.sh
 branches:
   only:
   - dev
