@@ -1,9 +1,7 @@
-#https://jekyllrb.com/docs/continuous-integration/travis-ci/
-#https://gist.github.com/willprice/e07efd73fb7f13f917ea
 language: ruby
 rvm:
 - 2.4.1
-script: "bundle exec jgd -b master -r dev -u https://${GH_TOKEN}@github.com/Finesim97/finesim97.github.io.git"
+script: bundle exec jgd -b master -r dev -u https://${GH_TOKEN}@github.com/Finesim97/finesim97.github.io.git
 branches:
   only:
   - dev
@@ -11,6 +9,7 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   - secure: fTeRR3tOjLqqwg6QZDOjTTJvl9zLFv3V18f9wijPaDGPVUmPnJXGFQFZQUyA8OKlQWXkLoN6iIdtCo2w8aCBbgfjDpF05+AcnIE+HHY6t+mBwPGw2EJ5240WwfJBKwEkOwnJaZPlvHndxrXPeKquxJA4oorgeYJEA9sYH/voC5rU5Inl2ARWbM7+LY806EK3EzqbMlpxCs+k+2MKL6OvAydWbEFYCUtnqEHoLMzUZy7mWvx2tE1jb8kR+WYMpyK1ekZq252sgyhjGapJkl/hiBJ/oNf54dplgUqKYt7yb9puRQOE1xy9iWu0reffyH5szMVEJQJ48xgHpwrKIzFl9a15iKpTTzkNkMrTWqK5bA9DlpxzdBTUR4jOs6e7SSIuqWwabBZKEulnWoYF8GOxNCHhyKvx485Pr9bHz/1bxIHonv/8RpoJCpfcLS0laZmMiP1fP+++bSpi8g1tuuq1HhUHcA9tJdX75DsYJek03gx0OSm4oYDgsgEUQI0zVsmsI/i4pd/D1eWOqLQR152kfSOvnWi9VZuuvpIZC08AtbtAiYwRxL5iJajiwtdBb1aeqFx8NTiEgZ2Ln1vmVkecEyfuJHyTj+MUEK0zFRL6Ybhf6m4+mQuaElEKIuNT4vJK5cayo7JOSWg2EkU5awId/AjxG5DpDtjeD50UK8uu1Zc=
+  - secure: ZFYXc3Tu++aVIG4nmtXnJMRC9varSUXnagi5TrvozsyiwtEPgJiaEYiNwWBt0djuilDzAfPfXKGA7MB96Bm7262mmt+kc+b0tbJSubC1KXhf2bZfG5CLPHvJ4ImgQNuhrXXo0c+0Er52mBqe7/z7iOZkzCxx9wH1OwEeyQnHjlIChb14EVBM3gfGd84I6thcW+mT6spfjyj3aG87/MT4Q3urvm4CE8RGlieG0ikIhfACawAOV9wfDxMHSiXkVnNwiJPPDlQl3usW56f6OwTJ+5Khtg7Gl45eZ/qap+MzMqBSnn8hNuAxiRpu5tBe0qWtsCQPVetU9X1553wL+eSJL6ENWc+zcYpXa53Ub88urco5EfM+A+pCF2cBARsW98EmdgE2KCfshMhFGY1YchNqGY6viI45BvanidSNjRSKfHgiywvTuZdD132djbazWh+FMYR17eBsY+S23d33bH0qDJPdNUq+nHi1w+qpUYlOS0wER/Mem8LEXvCjl7XrO8nyYTxvNVfwE/ZayeIAoq/KTggyf1rwcwTSyjl7HwLDNrnI1QFpeMDWjGwzs9gOpTlk8acb0IJJlTpB90/lm03x6PFf7zpwl0uw+uJMKY4K8Lr2QeT48ACXUggRR9gA4ODfP7IRFBHItDa+NiXJvPdvA+DaBA1cN/tWA+RkGohIA2c=
 addons:
   apt:
     packages:
