@@ -29,7 +29,7 @@ repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-m
 head_scripts             : #
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
+words_per_minute         : 175
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
@@ -261,8 +261,10 @@ compress_html:
     envs: development
 
 scholar:
-  style: nature
-  group_by: "type"
+  style: ieee-with-url
+  bibtex_filters:
+    - latex
+    - HTML
 
 # Defaults
 defaults:
