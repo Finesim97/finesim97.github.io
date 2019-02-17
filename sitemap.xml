@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://www.ljansen.net/personal/hello-world</loc>
+<lastmod>2019-02-17T00:00:46+01:00</lastmod>
+</url>
+<url>
+<loc>https://www.ljansen.net/projects/jekyll-setup</loc>
+<lastmod>2019-02-17T08:00:46+01:00</lastmod>
+</url>
+<url>
 <loc>https://www.ljansen.net/about</loc>
 </url>
 <url>
@@ -14,5 +22,20 @@
 </url>
 <url>
 <loc>https://www.ljansen.net/tags/</loc>
+</url>
+<url>
+<loc>https://www.ljansen.net/tags/project-start/</loc>
+</url>
+<url>
+<loc>https://www.ljansen.net/tags/project-finish/</loc>
+</url>
+<url>
+<loc>https://www.ljansen.net/tags/website/</loc>
+</url>
+<url>
+<loc>https://www.ljansen.net/categories/personal/</loc>
+</url>
+<url>
+<loc>https://www.ljansen.net/categories/projects/</loc>
 </url>
 </urlset>

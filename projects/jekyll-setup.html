@@ -1,0 +1,581 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Blog Setup with Jekyll - Lukas Jansen</title>
+<meta name="description" content="I thought the first project description should be my automatic jekyll static page generation.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Lukas Jansen">
+<meta property="og:title" content="Blog Setup with Jekyll">
+<meta property="og:url" content="https://www.ljansen.net/projects/jekyll-setup">
+
+
+  <meta property="og:description" content="I thought the first project description should be my automatic jekyll static page generation.">
+
+
+
+
+
+  <meta name="twitter:site" content="@LukasJansen1997">
+  <meta name="twitter:title" content="Blog Setup with Jekyll">
+  <meta name="twitter:description" content="I thought the first project description should be my automatic jekyll static page generation.">
+  <meta name="twitter:url" content="https://www.ljansen.net/projects/jekyll-setup">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2019-02-17T08:00:46+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://www.ljansen.net/projects/jekyll-setup">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lukas Jansen",
+      "url": "https://www.ljansen.net",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Lukas Jansen Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">Lukas Jansen</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about" >About me</a>
+            </li><li class="masthead__menu-item">
+              <a href="/assets/files/cv.pdf" >CV</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories" >Posts by Categories</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags" >Posts by Tags</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Blog Setup with Jekyll">
+    <meta itemprop="description" content="I thought the first project description should be my automatic jekyll static page generation.">
+    <meta itemprop="datePublished" content="February 17, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Blog Setup with Jekyll
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#why-tho">Why tho?</a></li>
+  <li><a href="#jekyll">Jekyll</a>
+    <ul>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#ci-friendly-setup">CI friendly Setup</a></li>
+      <li><a href="#example-post-and-page">Example post and page</a></li>
+    </ul>
+  </li>
+  <li><a href="#travis-ci-autobuild">Travis CI Autobuild</a></li>
+  <li><a href="#end">End</a></li>
+  <li><a href="#references">References</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>I thought the first project description should be my automatic jekyll static page generation.</p>
+
+<h2 id="why-tho">Why tho?</h2>
+<p>At least <strong>20%</strong> of the popular internet runs on WordPress. <a href="#trendcms">[1]</a> Some years ago I hosted a WordPress blog on my server. It is really comfortable and configurable, the need for PHP and a DBS is also not a problem for anyone, you can set those up in minutes or just rent an inexpensive instance.</p>
+
+<p>The main opensource WordPress platform has been become quite hardened over time, but vulnerabilities in one of the over <strong>50.000</strong> plugins (Feb19)<a href="#wordpressplugins">[2]</a> get discovered almost monthly.  The only <em>dynamic</em> part of a website I would be interested in, is a comment system, otherwise my site consists of static content.</p>
+
+<h2 id="jekyll">Jekyll</h2>
+<p><img src="/assets/images/jekylllogo.png" alt="Jekyll logo" class="align-right" /> While working on a pipeline to analyse methylome data I needed to document a lot of decisions and also wanted reports on the processed datasets. At the time I had already used Markdown (Cheatsheat <a href="#markdown">[3]</a>) with <a href="https://github.com/showdownjs/showdown">Showdown</a> and <a href="https://rmarkdown.rstudio.com">Rmarkdown</a> to generate HTML pages and came acrosse the Jekyll Project. Jekyll is a Ruby program, which allows the creation of static blog-like-pages with the help of Markdown and <a href="https://shopify.github.io/liquid/">Liquid</a>.
+Another really nice option is to use jekyll within a <a href="https://pages.github.com">Github Pages</a> page, then they take of automatically building your page, but they limit the plugins you can use to the ones in this <a href="https://github.com/github/pages-gem">gem</a>, this is the reason I use a different configuration.</p>
+
+<h3 id="installation">Installation</h3>
+<p>The  <a href="https://jekyllrb.com/docs/">documentation</a> is quite useful, it is also a jekyll page. To install jekyll you will need <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby</a> and <a href="https://bundler.io/#getting-started">Bundler</a>. Bundler can be installed after Ruby using:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>bundler
+</code></pre></div></div>
+
+<h3 id="ci-friendly-setup">CI friendly Setup</h3>
+<p>After looking at <a href="http://jekyllthemes.org">some themes</a> I decided to use the MinimalMistakes Theme <a href="#mmistakes">[4]</a>. I have been seeing it or a fork of it on some websites of researches and liked the <em>minimal</em> design, it is also very functional and well documented. To install it, make a new directory and create a file in it with the name <code class="highlighter-rouge">Gemfile</code> and the following content:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> <span class="s2">"https://rubygems.org"</span>
+<span class="c"># To upgrade, run `bundle update`.</span>
+gem <span class="s2">"jgd"</span> <span class="c"># Automatic build and git deployment</span>
+gem <span class="s2">"jekyll"</span> <span class="c"># Site Generation</span>
+gem <span class="s2">"minimal-mistakes-jekyll"</span> <span class="c"># Theme</span>
+<span class="c"># The following plugins are automatically loaded by the theme-gem:</span>
+<span class="c">#   gem "jekyll-paginate"</span>
+<span class="c">#   gem "jekyll-sitemap"</span>
+<span class="c">#   gem "jekyll-gist"</span>
+<span class="c">#   gem "jekyll-feed"</span>
+<span class="c">#   gem "jemoji"</span>
+<span class="c">#   gem "jekyll-data"</span>
+
+gem <span class="s2">"unicode"</span>
+
+group :jekyll_plugins <span class="k">do
+    </span>gem <span class="s2">"jekyll-archives"</span> <span class="c"># Tag and category pages</span>
+    gem <span class="s2">"jekyll-scholar"</span> <span class="c"># Bibliography and citations</span>
+end
+</code></pre></div></div>
+
+<p>You will also need the default jekyll/minimalmistakes <code class="highlighter-rouge">_config.yaml</code>file, which you can download from the repository:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/_config.yml
+</code></pre></div></div>
+
+<p>In this file add:</p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">theme</span><span class="pi">:</span> <span class="s2">"</span><span class="s">minimal-mistakes-jekyll"</span>
+<span class="na">source</span><span class="pi">:</span> <span class="s">src</span>
+<span class="na">destination</span><span class="pi">:</span> <span class="s">_site</span>
+</code></pre></div></div>
+
+<p>This means that jekyll will read the input file from the <code class="highlighter-rouge">src</code> directory and store the resulting html pages in the <code class="highlighter-rouge">_site</code> directory.
+To create the directory structure in the <code class="highlighter-rouge">src</code> directory:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle <span class="nb">exec </span>jekyll new <span class="nt">--skip-bundle</span> <span class="nt">--blank</span> src
+</code></pre></div></div>
+
+<h3 id="example-post-and-page">Example post and page</h3>
+<p>Now you can create posts and pages.</p>
+
+<p><code class="highlighter-rouge">src/index.html</code></p>
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">home</span>
+<span class="na">author_profile</span><span class="pi">:</span> <span class="no">true</span> 
+<span class="nn">---</span>
+Hi!
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">src/_pages/about.md</code></p>
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">About me</span>
+<span class="na">layout</span><span class="pi">:</span> <span class="s">single</span>
+<span class="na">permalink</span><span class="pi">:</span> <span class="s">about</span>
+<span class="na">author_profile</span><span class="pi">:</span> <span class="no">true</span> 
+<span class="nn">---</span>
+<span class="gu">## Headline</span>
+ You can create a 404 page in app/_pages/404.md
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">src/_posts/2019-02-017-namestartshere.md</code></p>
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="na">title</span><span class="pi">:</span>  <span class="s2">"</span><span class="s">This</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">post</span><span class="nv"> </span><span class="s">title"</span>
+<span class="c1"># The post will only be build into the page, </span>
+<span class="c1"># if the date of the build reached this:</span>
+<span class="na">date</span><span class="pi">:</span>   <span class="s">2019-02-17 9:00:46 +0200</span> 
+<span class="c1"># You can also use the --future option</span>
+<span class="na">categories</span><span class="pi">:</span> <span class="s">Category</span>
+<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">Tag 1</span><span class="pi">,</span> <span class="nv">Tag2</span><span class="pi">]</span>
+<span class="na">toc</span><span class="pi">:</span> <span class="no">true</span>
+<span class="c1">#toc: table of contents</span>
+<span class="na">published</span><span class="pi">:</span> <span class="no">true</span> 
+<span class="c1"># published false overwrites the date, true doesn't</span>
+<span class="nn">---</span>
+<span class="p">[</span><span class="nv">Link to the page</span><span class="p">](</span><span class="sx">/about</span><span class="p">)</span>
+
+<span class="gu">## You can write blog stuff here</span>
+Check the minimal mistakes website for more layout options.
+
+<span class="gu">### Links</span>
+<span class="p">*</span> <span class="p">[</span><span class="nv">Wiki</span><span class="p">](</span><span class="sx">https://wikipedia.com</span><span class="p">)</span>
+<span class="p">*</span> <span class="p">[</span><span class="nv">Google</span><span class="p">](</span><span class="sx">https://google.com</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><a href="https://mmistakes.github.io/minimal-mistakes/docs/navigation/">Here</a> you can read how to create a navigation bar. Now you can build your site with:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Build the html files</span>
+bundle <span class="nb">exec </span>jekyll build
+<span class="c"># Start a small webserver on localhost:4000</span>
+bundle <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
+<p><img src="/assets/images/jekyllresult.png" alt="Example post" class="align-center" /></p>
+
+<h2 id="travis-ci-autobuild">Travis CI Autobuild</h2>
+<p><img src="/assets/images/TravisCI-Mascot-1.png" alt="Jekyll logo" class="align-right" />You can host your version control on <a href="https://github.com">GitHub</a>, that allows you to use <a href="https://travis-ci.com">Travis CI</a> to automatically build and publish it. Thanks to the cron function of Travis CI, it is also possible to have a working planned publish system with the <code class="highlighter-rouge">date: ....</code> option. Travis CI has two websites travis-ci.com and .org, in the future, .org will be merged with .com, so use <a href="https://travis-ci.com">.com</a>. <a href="#travis">[5]</a></p>
+
+<p>If you plan to make it your personal site, don’t use your <code class="highlighter-rouge">&lt;username&gt;.github.io</code> repositories master branch, as you would have to use this branch for the html files, but you can use a new branch.</p>
+
+<p>I use the jekyll-github-deploy Ruby script, look at the project README for all the options.<a href="#jgd">[6]</a> Y you could replace it with a build script.</p>
+
+<p>The build is defined in the <code class="highlighter-rouge">.travis.yml</code> file in the root of the repo: <a href="#jekylltravis">[7]</a></p>
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">language</span><span class="pi">:</span> <span class="s">ruby</span>
+<span class="na">rvm</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="s">2.4.1</span>
+<span class="na">script</span><span class="pi">:</span> <span class="s">bundle exec jgd -b TARGET_BRANCH -r SRC_BRANCH -u https://${GH_TOKEN}@github.com/USERNAME/REPO.git</span>
+<span class="na">branches</span><span class="pi">:</span>
+  <span class="na">only</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">SRC_BRANCH</span>
+<span class="na">env</span><span class="pi">:</span>
+  <span class="na">global</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">NOKOGIRI_USE_SYSTEM_LIBRARIES=true</span>
+  <span class="pi">-</span> <span class="na">secure</span><span class="pi">:</span> <span class="s">ENCRYPTEDGHTOKEN</span>
+<span class="na">addons</span><span class="pi">:</span>
+  <span class="na">apt</span><span class="pi">:</span>
+    <span class="na">packages</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">libcurl4-openssl-dev</span>
+<span class="na">sudo</span><span class="pi">:</span> <span class="no">false</span>
+<span class="na">cache</span><span class="pi">:</span> <span class="s">bundler</span>
+</code></pre></div></div>
+
+<p>The used placeholders:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Placeholder</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>USERNAME</td>
+      <td>Your GitHub username</td>
+    </tr>
+    <tr>
+      <td>REPO</td>
+      <td>Your repo, for your personal website USERNAME.github.io</td>
+    </tr>
+    <tr>
+      <td>SRC_BRANCH</td>
+      <td>The branch which holds the Jekyll files and the .travis.yml</td>
+    </tr>
+    <tr>
+      <td>TARGET_BRANCH</td>
+      <td>The branch which holds the HTML files, master for USERNAME.github.io</td>
+    </tr>
+    <tr>
+      <td>ENCRYPTEDGHTOKEN</td>
+      <td>The encrypted GitHub access token with the name GH_TOKEN. See below</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You can create a GitHub access token <a href="https://github.com/settings/tokens">here</a>. It only needs the <code class="highlighter-rouge">public_repo</code> permission.
+<img src="/assets/images/ghtoken.png" alt="Github Token Creation" class="align-center" />
+Never publish credentials in public visible repositories, you need to <a href="https://docs.travis-ci.com/user/encryption-keys/">encrypt those for Travis CI</a>.</p>
+
+<p>After pushing the file to the repo, you should be able to enable in TravisCI on the website and enable Github Pages on the TARGET_BRANCH.  In the settings for builds it is possible to define a cron job for periodic builds:
+<img src="/assets/images/traviscron.png" alt="Travis CI Cron Jobs" class="align-center" /></p>
+<h2 id="end">End</h2>
+<p>In later posts I will cover citations and the archive pages (tags, categories). If something isn’t working, feel free to contact me.</p>
+
+<p>Something nice for you to check out:</p>
+
+<p><a href="https://www.maximumfun.org/shows/adventure-zone">The AdventureZone Podcast</a>. The McElroy family (My Brother, My Brother and Me) playing RPG table top games.</p>
+
+<h2 id="references">References</h2>
+<ol class="bibliography"><li><span id="trendcms">[1]BuiltWith Pty Ltd, “CMS Usage Distribution in the Top 1 Million Sites.” 2019 [Online]. Available at: <a href="https://trends.builtwith.com/cms">Link</a></span></li>
+<li><span id="wordpressplugins">[2]Wordpress.org, “WordPress Plugins.” 2019 [Online]. Available at: <a href="https://wordpress.org/plugins/">Link</a></span></li>
+<li><span id="markdown">[3]A. Pritchard, “Markdown Cheatsheet.” 2017 [Online]. Available at: <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Link</a></span></li>
+<li><span id="mmistakes">[4]M. Rose, “Minimal Mistakes - A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.” 2019 [Online]. Available at: <a href="https://mmistakes.github.io/minimal-mistakes/#">Link</a></span></li>
+<li><span id="travis">[5]J. Kalderimis, “Announcing support for open source projects on travis-ci.com.” 2018 [Online]. Available at: <a href="https://blog.travis-ci.com/2018-05-02-open-source-projects-on-travis-ci-com-with-github-apps">Link</a></span></li>
+<li><span id="jgd">[6]Y. Bugayenko, “jekyll-github-deploy.” 2018 [Online]. Available at: <a href="https://github.com/yegor256/jekyll-github-deploy">Link</a></span></li>
+<li><span id="jekylltravis">[7]JekyllRb, “ Jekyll - Travis CI .” 2019 [Online]. Available at: <a href="https://jekyllrb.com/docs/continuous-integration/travis-ci/">Link</a></span></li></ol>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/project-finish" class="page__taxonomy-item" rel="tag">Project Finish</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/website" class="page__taxonomy-item" rel="tag">Website</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/projects" class="page__taxonomy-item" rel="tag">Projects</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-02-17T08:00:46+01:00">February 17, 2019</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=LukasJansen1997&text=Blog+Setup+with+Jekyll%20https%3A%2F%2Fwww.ljansen.net%2Fprojects%2Fjekyll-setup" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ljansen.net%2Fprojects%2Fjekyll-setup" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.ljansen.net%2Fprojects%2Fjekyll-setup" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ljansen.net%2Fprojects%2Fjekyll-setup" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/personal/hello-world" class="pagination--pager" title="Hello (maybe simulated) World!
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/personal/hello-world" rel="permalink">Hello (maybe simulated) World!
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">This year marks the start of my personal website and blog.
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Lukas Jansen. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+  </body>
+</html>
