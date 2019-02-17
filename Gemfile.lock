@@ -71,7 +71,7 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (2.1.2)
       listen (~> 3.0)
-    jemoji (0.10.1)
+    jemoji (0.10.2)
       gemoji (~> 3.0)
       html-pipeline (~> 2.2)
       jekyll (~> 3.0)
@@ -130,7 +130,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.8)
+  jekyll
   jekyll-archives
   jekyll-scholar
   jgd
