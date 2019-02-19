@@ -4,8 +4,8 @@ main:
       url: "/"
     - title: "About me"
       url: /about
-    - title: "CV"
-      url: /assets/files/cv.pdf
+    - title: "Resume"
+      url: /assets/files/resume-lukasjansen.pdf
     - title: "Posts by Categories"
       url: /categories
     - title: "Posts by Tags"
