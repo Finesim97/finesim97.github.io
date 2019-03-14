@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.ljansen.net/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.ljansen.net/" rel="alternate" type="text/html" /><updated>2019-03-14T12:48:22+01:00</updated><id>https://www.ljansen.net/feed.xml</id><title type="html">Lukas Jansen</title><subtitle>The personal website of a life science student, who struggles with books, apps, productivity, projects and general existence.</subtitle><author><name>Lukas Jansen</name><email>web@ljansen.net</email><uri>https://www.ljansen.net</uri></author><entry><title type="html">Blog Setup with Jekyll</title><link href="https://www.ljansen.net/projects/jekyll-setup" rel="alternate" type="text/html" title="Blog Setup with Jekyll" /><published>2019-02-17T08:00:46+01:00</published><updated>2019-02-17T08:00:46+01:00</updated><id>https://www.ljansen.net/projects/jekyll-setup</id><content type="html" xml:base="https://www.ljansen.net/projects/jekyll-setup">&lt;p&gt;I thought the first project description should be my automatic jekyll static page generation.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.lukas-jansen.de/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.lukas-jansen.de/" rel="alternate" type="text/html" /><updated>2019-03-14T18:17:17+01:00</updated><id>https://www.lukas-jansen.de/feed.xml</id><title type="html">Lukas Jansen</title><subtitle>The personal website of a life science student, struggling with books, apps, productivity, projects and general existence.</subtitle><author><name>Lukas Jansen</name><uri>https://www.ljansen.net</uri></author><entry><title type="html">Blog Setup with Jekyll</title><link href="https://www.lukas-jansen.de/projects/jekyll-setup" rel="alternate" type="text/html" title="Blog Setup with Jekyll" /><published>2019-02-17T08:00:46+01:00</published><updated>2019-02-17T08:00:46+01:00</updated><id>https://www.lukas-jansen.de/projects/jekyll-setup</id><content type="html" xml:base="https://www.lukas-jansen.de/projects/jekyll-setup">&lt;p&gt;I thought the first project description should be my automatic jekyll page generation.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-tho&quot;&gt;Why tho?&lt;/h2&gt;
 &lt;p&gt;At least &lt;strong&gt;20%&lt;/strong&gt; of the popular internet runs on WordPress. &lt;a href=&quot;#trendcms&quot;&gt;[1]&lt;/a&gt; Some years ago I hosted a WordPress blog on my server. It is really comfortable and configurable, the need for PHP and a DBS is also not a problem for anyone, you can set those up in minutes or just rent an inexpensive instance.&lt;/p&gt;
@@ -15,7 +15,7 @@ Another really nice option is to use jekyll within a &lt;a href=&quot;https://pa
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;ci-friendly-setup&quot;&gt;CI friendly Setup&lt;/h3&gt;
-&lt;p&gt;After looking at &lt;a href=&quot;http://jekyllthemes.org&quot;&gt;some themes&lt;/a&gt; I decided to use the MinimalMistakes Theme &lt;a href=&quot;#mmistakes&quot;&gt;[4]&lt;/a&gt;. I have been seeing it or a fork of it on some websites of researches and liked the &lt;em&gt;minimal&lt;/em&gt; design, it is also very functional and well documented. To install it, make a new directory and create a file in it with the name &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and the following content:&lt;/p&gt;
+&lt;p&gt;After looking at &lt;a href=&quot;http://jekyllthemes.org&quot;&gt;some themes&lt;/a&gt; I decided to use the MinimalMistakes Theme &lt;a href=&quot;#mmistakes&quot;&gt;[4]&lt;/a&gt;. I have been seeing it or a fork of it on some websites of researchers and liked the &lt;em&gt;minimal&lt;/em&gt; design, it is also very functional and well documented. To install it, make a new directory and create a file in it with the name &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and the following content:&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;https://rubygems.org&quot;&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# To upgrade, run `bundle update`.&lt;/span&gt;
@@ -110,9 +110,9 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
 &lt;h2 id=&quot;travis-ci-autobuild&quot;&gt;Travis CI Autobuild&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/images/TravisCI-Mascot-1.png&quot; alt=&quot;Jekyll logo&quot; class=&quot;align-right&quot; /&gt;You can host your version control on &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;, that allows you to use &lt;a href=&quot;https://travis-ci.com&quot;&gt;Travis CI&lt;/a&gt; to automatically build and publish it. Thanks to the cron function of Travis CI, it is also possible to have a working planned publish system with the &lt;code class=&quot;highlighter-rouge&quot;&gt;date: ....&lt;/code&gt; option. Travis CI has two websites travis-ci.com and .org, in the future, .org will be merged with .com, so use &lt;a href=&quot;https://travis-ci.com&quot;&gt;.com&lt;/a&gt;. &lt;a href=&quot;#travis&quot;&gt;[5]&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;If you plan to make it your personal site, don’t use your &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repositories master branch, as you would have to use this branch for the html files, but you can use a new branch.&lt;/p&gt;
+&lt;p&gt;If you plan to make it your personal site, don’t use your &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repositories master branch, as you have to use this branch for the html files, but you can use a new branch.&lt;/p&gt;
 
-&lt;p&gt;I use the jekyll-github-deploy Ruby script, look at the project README for all the options.&lt;a href=&quot;#jgd&quot;&gt;[6]&lt;/a&gt; Y you could replace it with a build script.&lt;/p&gt;
+&lt;p&gt;I use the jekyll-github-deploy Ruby script, look at the project README for all the options.&lt;a href=&quot;#jgd&quot;&gt;[6]&lt;/a&gt; You could replace it with a build script.&lt;/p&gt;
 
 &lt;p&gt;The build is defined in the &lt;code class=&quot;highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; file in the root of the repo: &lt;a href=&quot;#jekylltravis&quot;&gt;[7]&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ruby&lt;/span&gt;
@@ -178,7 +178,7 @@ Never publish credentials in public visible repositories, you need to &lt;a href
 
 &lt;p&gt;Something nice for you to check out:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.maximumfun.org/shows/adventure-zone&quot;&gt;The AdventureZone Podcast&lt;/a&gt;. The McElroy family (My Brother, My Brother and Me) playing RPG table top games.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.maximumfun.org/shows/adventure-zone&quot;&gt;The AdventureZone Podcast&lt;/a&gt;. The McElroy family (My Brother, My Brother and Me) playing RPG tabletop games.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 &lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;trendcms&quot;&gt;[1]BuiltWith Pty Ltd, “CMS Usage Distribution in the Top 1 Million Sites.” 2019 [Online]. Available at: &lt;a href=&quot;https://trends.builtwith.com/cms&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
@@ -187,29 +187,21 @@ Never publish credentials in public visible repositories, you need to &lt;a href
 &lt;li&gt;&lt;span id=&quot;mmistakes&quot;&gt;[4]M. Rose, “Minimal Mistakes - A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.” 2019 [Online]. Available at: &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/#&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span id=&quot;travis&quot;&gt;[5]J. Kalderimis, “Announcing support for open source projects on travis-ci.com.” 2018 [Online]. Available at: &lt;a href=&quot;https://blog.travis-ci.com/2018-05-02-open-source-projects-on-travis-ci-com-with-github-apps&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;&lt;span id=&quot;jgd&quot;&gt;[6]Y. Bugayenko, “jekyll-github-deploy.” 2018 [Online]. Available at: &lt;a href=&quot;https://github.com/yegor256/jekyll-github-deploy&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;jekylltravis&quot;&gt;[7]JekyllRb, “ Jekyll - Travis CI .” 2019 [Online]. Available at: &lt;a href=&quot;https://jekyllrb.com/docs/continuous-integration/travis-ci/&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</content><author><name>Lukas Jansen</name><email>web@ljansen.net</email><uri>https://www.ljansen.net</uri></author><category term="Project Finish" /><category term="Website" /><summary type="html">I thought the first project description should be my automatic jekyll static page generation.</summary></entry><entry><title type="html">Hello (maybe simulated) World!</title><link href="https://www.ljansen.net/personal/hello-world" rel="alternate" type="text/html" title="Hello (maybe simulated) World!" /><published>2019-02-17T00:00:46+01:00</published><updated>2019-02-17T00:00:46+01:00</updated><id>https://www.ljansen.net/personal/hello-world</id><content type="html" xml:base="https://www.ljansen.net/personal/hello-world">&lt;p&gt;This year marks the start of my personal website and blog.&lt;/p&gt;
+&lt;li&gt;&lt;span id=&quot;jekylltravis&quot;&gt;[7]JekyllRb, “ Jekyll - Travis CI .” 2019 [Online]. Available at: &lt;a href=&quot;https://jekyllrb.com/docs/continuous-integration/travis-ci/&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</content><author><name>Lukas Jansen</name><uri>https://www.ljansen.net</uri></author><category term="Project Finish" /><category term="Website" /><summary type="html">I thought the first project description should be my automatic jekyll page generation.</summary></entry><entry><title type="html">Hello (maybe simulated) World!</title><link href="https://www.lukas-jansen.de/personal/hello-world" rel="alternate" type="text/html" title="Hello (maybe simulated) World!" /><published>2019-02-17T00:00:46+01:00</published><updated>2019-02-17T00:00:46+01:00</updated><id>https://www.lukas-jansen.de/personal/hello-world</id><content type="html" xml:base="https://www.lukas-jansen.de/personal/hello-world">&lt;p&gt;This year marks the start of my personal website and blog.&lt;/p&gt;
 
 &lt;p&gt;So: &lt;strong&gt;Happy new Year!&lt;/strong&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;why-am-i-doing-this&quot;&gt;Why am I doing this?&lt;/h2&gt;
-&lt;p&gt;The time of the blog may be over. I have to say, at the moment of writing this post I am not actively following
+&lt;p&gt;The time of the blog may be over. I have to say, at the moment of writing this post, I am not actively following
 any blog myself, so the question arises, what is the return on investment of maintaining something like this?
 These are the main reasons for me doing this in no particular order:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;strong&gt;Online presence&lt;/strong&gt;: Having a public persona is a requirement for almost anything in this day and age.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Portofolio&lt;/strong&gt;: Talking about your great projects isn’t enough, you need a central place to show them off.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Writing practice&lt;/strong&gt;: Around 90% of the media I consume is in english, but I am really scared of my active english withering away.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Project documentation&lt;/strong&gt;: A big part of mainting a project and finishing it is having a clear documentation, which defines your goals
+  &lt;li&gt;&lt;strong&gt;Project documentation&lt;/strong&gt;: A big part of maintaining a project and finishing it is having a clear documentation, which defines your goals
 and helps other people profiting from it.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h2 id=&quot;what-i-am-doing&quot;&gt;What I am doing?&lt;/h2&gt;
-&lt;p&gt;Every two weeks I want to post two posts on this page. The first one describing a project I worked on the last two weeks and another
-one defining my next project. The project may be anything in the fields of computer science, molecular biology, bioinformatics, data science or dev ops. In molecular biology I will probably choose a topic in one of the *omics and write a little popular science article
-on it.&lt;/p&gt;
-
-&lt;p&gt;The goal would be to work on that project around 30min every day and so spend 7 to 10 hours on it. As an active time tracking proponent, I will be able to keep record of the time I actually spent. Every project start will include a outline for my GTD system
-and the finish post the actual tasks I have completed.&lt;/p&gt;
 
 &lt;h2 id=&quot;who-am-i&quot;&gt;Who am I?&lt;/h2&gt;
 &lt;p&gt;To answer this question, check my (hopefully) current &lt;a href=&quot;/about/&quot;&gt;About me&lt;/a&gt; page.&lt;/p&gt;
@@ -218,4 +210,4 @@ and the finish post the actual tasks I have completed.&lt;/p&gt;
 
 &lt;p&gt;Something nice for you to check out:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=cZYNADOHhVY&quot;&gt;A video&lt;/a&gt; by the YouTube educational channel CGPGrey based on a paper Nick Bostrom telling a fable dealing with immortality research.&lt;/p&gt;</content><author><name>Lukas Jansen</name><email>web@ljansen.net</email><uri>https://www.ljansen.net</uri></author><category term="Project Start" /><category term="Project Finish" /><summary type="html">This year marks the start of my personal website and blog.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=cZYNADOHhVY&quot;&gt;A video&lt;/a&gt; by the YouTube educational channel CGPGrey based on a paper Nick Bostrom telling a fable dealing with immortality research.&lt;/p&gt;</content><author><name>Lukas Jansen</name><uri>https://www.ljansen.net</uri></author><category term="Project Start" /><category term="Project Finish" /><summary type="html">This year marks the start of my personal website and blog.</summary></entry></feed>

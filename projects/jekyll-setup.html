@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Blog Setup with Jekyll - Lukas Jansen</title>
-<meta name="description" content="I thought the first project description should be my automatic jekyll static page generation.">
+<meta name="description" content="I thought the first project description should be my automatic jekyll page generation.">
 
 
 
@@ -18,10 +18,10 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Lukas Jansen">
 <meta property="og:title" content="Blog Setup with Jekyll">
-<meta property="og:url" content="https://www.ljansen.net/projects/jekyll-setup">
+<meta property="og:url" content="https://www.lukas-jansen.de/projects/jekyll-setup">
 
 
-  <meta property="og:description" content="I thought the first project description should be my automatic jekyll static page generation.">
+  <meta property="og:description" content="I thought the first project description should be my automatic jekyll page generation.">
 
 
 
@@ -29,8 +29,8 @@
 
   <meta name="twitter:site" content="@LukasJansen1997">
   <meta name="twitter:title" content="Blog Setup with Jekyll">
-  <meta name="twitter:description" content="I thought the first project description should be my automatic jekyll static page generation.">
-  <meta name="twitter:url" content="https://www.ljansen.net/projects/jekyll-setup">
+  <meta name="twitter:description" content="I thought the first project description should be my automatic jekyll page generation.">
+  <meta name="twitter:url" content="https://www.lukas-jansen.de/projects/jekyll-setup">
 
   
     <meta name="twitter:card" content="summary">
@@ -52,7 +52,7 @@
   
 
 
-<link rel="canonical" href="https://www.ljansen.net/projects/jekyll-setup">
+<link rel="canonical" href="https://www.lukas-jansen.de/projects/jekyll-setup">
 
 
 
@@ -65,7 +65,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Lukas Jansen",
-      "url": "https://www.ljansen.net",
+      "url": "https://www.lukas-jansen.de",
       "sameAs": null
     }
   </script>
@@ -170,7 +170,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Blog Setup with Jekyll">
-    <meta itemprop="description" content="I thought the first project description should be my automatic jekyll static page generation.">
+    <meta itemprop="description" content="I thought the first project description should be my automatic jekyll page generation.">
     <meta itemprop="datePublished" content="February 17, 2019">
     
 
@@ -212,7 +212,7 @@
             </nav>
           </aside>
         
-        <p>I thought the first project description should be my automatic jekyll static page generation.</p>
+        <p>I thought the first project description should be my automatic jekyll page generation.</p>
 
 <h2 id="why-tho">Why tho?</h2>
 <p>At least <strong>20%</strong> of the popular internet runs on WordPress. <a href="#trendcms">[1]</a> Some years ago I hosted a WordPress blog on my server. It is really comfortable and configurable, the need for PHP and a DBS is also not a problem for anyone, you can set those up in minutes or just rent an inexpensive instance.</p>
@@ -229,7 +229,7 @@ Another really nice option is to use jekyll within a <a href="https://pages.gith
 </code></pre></div></div>
 
 <h3 id="ci-friendly-setup">CI friendly Setup</h3>
-<p>After looking at <a href="http://jekyllthemes.org">some themes</a> I decided to use the MinimalMistakes Theme <a href="#mmistakes">[4]</a>. I have been seeing it or a fork of it on some websites of researches and liked the <em>minimal</em> design, it is also very functional and well documented. To install it, make a new directory and create a file in it with the name <code class="highlighter-rouge">Gemfile</code> and the following content:</p>
+<p>After looking at <a href="http://jekyllthemes.org">some themes</a> I decided to use the MinimalMistakes Theme <a href="#mmistakes">[4]</a>. I have been seeing it or a fork of it on some websites of researchers and liked the <em>minimal</em> design, it is also very functional and well documented. To install it, make a new directory and create a file in it with the name <code class="highlighter-rouge">Gemfile</code> and the following content:</p>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> <span class="s2">"https://rubygems.org"</span>
 <span class="c"># To upgrade, run `bundle update`.</span>
@@ -324,9 +324,9 @@ bundle <span class="nb">exec </span>jekyll serve
 <h2 id="travis-ci-autobuild">Travis CI Autobuild</h2>
 <p><img src="/assets/images/TravisCI-Mascot-1.png" alt="Jekyll logo" class="align-right" />You can host your version control on <a href="https://github.com">GitHub</a>, that allows you to use <a href="https://travis-ci.com">Travis CI</a> to automatically build and publish it. Thanks to the cron function of Travis CI, it is also possible to have a working planned publish system with the <code class="highlighter-rouge">date: ....</code> option. Travis CI has two websites travis-ci.com and .org, in the future, .org will be merged with .com, so use <a href="https://travis-ci.com">.com</a>. <a href="#travis">[5]</a></p>
 
-<p>If you plan to make it your personal site, don’t use your <code class="highlighter-rouge">&lt;username&gt;.github.io</code> repositories master branch, as you would have to use this branch for the html files, but you can use a new branch.</p>
+<p>If you plan to make it your personal site, don’t use your <code class="highlighter-rouge">&lt;username&gt;.github.io</code> repositories master branch, as you have to use this branch for the html files, but you can use a new branch.</p>
 
-<p>I use the jekyll-github-deploy Ruby script, look at the project README for all the options.<a href="#jgd">[6]</a> Y you could replace it with a build script.</p>
+<p>I use the jekyll-github-deploy Ruby script, look at the project README for all the options.<a href="#jgd">[6]</a> You could replace it with a build script.</p>
 
 <p>The build is defined in the <code class="highlighter-rouge">.travis.yml</code> file in the root of the repo: <a href="#jekylltravis">[7]</a></p>
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">language</span><span class="pi">:</span> <span class="s">ruby</span>
@@ -392,7 +392,7 @@ Never publish credentials in public visible repositories, you need to <a href="h
 
 <p>Something nice for you to check out:</p>
 
-<p><a href="https://www.maximumfun.org/shows/adventure-zone">The AdventureZone Podcast</a>. The McElroy family (My Brother, My Brother and Me) playing RPG table top games.</p>
+<p><a href="https://www.maximumfun.org/shows/adventure-zone">The AdventureZone Podcast</a>. The McElroy family (My Brother, My Brother and Me) playing RPG tabletop games.</p>
 
 <h2 id="references">References</h2>
 <ol class="bibliography"><li><span id="trendcms">[1]BuiltWith Pty Ltd, “CMS Usage Distribution in the Top 1 Million Sites.” 2019 [Online]. Available at: <a href="https://trends.builtwith.com/cms">Link</a></span></li>
@@ -463,13 +463,13 @@ Never publish credentials in public visible repositories, you need to <a href="h
     <h4 class="page__share-title">Share on</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?via=LukasJansen1997&text=Blog+Setup+with+Jekyll%20https%3A%2F%2Fwww.ljansen.net%2Fprojects%2Fjekyll-setup" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?via=LukasJansen1997&text=Blog+Setup+with+Jekyll%20https%3A%2F%2Fwww.lukas-jansen.de%2Fprojects%2Fjekyll-setup" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ljansen.net%2Fprojects%2Fjekyll-setup" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.lukas-jansen.de%2Fprojects%2Fjekyll-setup" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.ljansen.net%2Fprojects%2Fjekyll-setup" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.lukas-jansen.de%2Fprojects%2Fjekyll-setup" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ljansen.net%2Fprojects%2Fjekyll-setup" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.lukas-jansen.de%2Fprojects%2Fjekyll-setup" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
