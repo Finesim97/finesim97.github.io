@@ -22,8 +22,8 @@ locale                   : "en-US"
 title                    : "Lukas Jansen"
 title_separator          : "-"
 name                     : "Lukas Jansen"
-description              : "The personal website of a life science student, who struggles with books, apps, productivity, projects and general existence."
-url                      : https://www.ljansen.net # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "The personal website of a life science student, struggling with books, apps, productivity, projects and general existence."
+url                      : https://www.lukas-jansen.de # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 head_scripts             : #
@@ -108,7 +108,7 @@ author:
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "German life science university student in his 6th term studying bioinformatics"
   location         : "Emden, Germany"
-  email            : "web@ljansen.net"
+  email            : 
   uri              : "https://www.ljansen.net"
 #  home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :

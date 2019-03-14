@@ -5,7 +5,7 @@ categories: Projects
 tags: [Project Finish, Website]
 toc: true
 ---
-I thought the first project description should be my automatic jekyll static page generation.
+I thought the first project description should be my automatic jekyll page generation.
 
 ## Why tho?
 At least **20%** of the popular internet runs on WordPress. {%cite trendcms%} Some years ago I hosted a WordPress blog on my server. It is really comfortable and configurable, the need for PHP and a DBS is also not a problem for anyone, you can set those up in minutes or just rent an inexpensive instance.
@@ -23,7 +23,7 @@ gem install bundler
 ```
 
 ### CI friendly Setup 
-After looking at [some themes](http://jekyllthemes.org) I decided to use the MinimalMistakes Theme {%cite mmistakes%}. I have been seeing it or a fork of it on some websites of researches and liked the *minimal* design, it is also very functional and well documented. To install it, make a new directory and create a file in it with the name `Gemfile` and the following content:
+After looking at [some themes](http://jekyllthemes.org) I decided to use the MinimalMistakes Theme {%cite mmistakes%}. I have been seeing it or a fork of it on some websites of researchers and liked the *minimal* design, it is also very functional and well documented. To install it, make a new directory and create a file in it with the name `Gemfile` and the following content:
 
 ``` sh
 source "https://rubygems.org"
@@ -127,9 +127,9 @@ bundle exec jekyll serve
 ## Travis CI Autobuild
 ![Jekyll logo](/assets/images/TravisCI-Mascot-1.png){: .align-right}You can host your version control on [GitHub](https://github.com), that allows you to use [Travis CI](https://travis-ci.com) to automatically build and publish it. Thanks to the cron function of Travis CI, it is also possible to have a working planned publish system with the `date: ....` option. Travis CI has two websites travis-ci.com and .org, in the future, .org will be merged with .com, so use [.com](https://travis-ci.com). {% cite travis %}
 
-If you plan to make it your personal site, don't use your `<username>.github.io` repositories master branch, as you would have to use this branch for the html files, but you can use a new branch.
+If you plan to make it your personal site, don't use your `<username>.github.io` repositories master branch, as you have to use this branch for the html files, but you can use a new branch.
 
-I use the jekyll-github-deploy Ruby script, look at the project README for all the options.{%cite jgd%} Y you could replace it with a build script.
+I use the jekyll-github-deploy Ruby script, look at the project README for all the options.{%cite jgd%} You could replace it with a build script.
 
 The build is defined in the `.travis.yml` file in the root of the repo: {%cite jekylltravis%}
 ``` yml
@@ -174,7 +174,7 @@ In later posts I will cover citations and the archive pages (tags, categories). 
 
 Something nice for you to check out:
 
-[The AdventureZone Podcast](https://www.maximumfun.org/shows/adventure-zone). The McElroy family (My Brother, My Brother and Me) playing RPG table top games.
+[The AdventureZone Podcast](https://www.maximumfun.org/shows/adventure-zone). The McElroy family (My Brother, My Brother and Me) playing RPG tabletop games.
 
 ## References
 {% bibliography --cited %}
