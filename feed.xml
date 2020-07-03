@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://www.lukas-jansen.de/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.lukas-jansen.de/" rel="alternate" type="text/html" /><updated>2019-12-12T13:09:05+01:00</updated><id>https://www.lukas-jansen.de/feed.xml</id><title type="html">Lukas Jansen</title><subtitle>The personal website of a life science student, struggling with books, apps, productivity, projects and general existence.</subtitle><author><name>Lukas Jansen</name><uri>https://www.ljansen.net</uri></author><entry><title type="html">Blog Setup with Jekyll</title><link href="https://www.lukas-jansen.de/projects/jekyll-setup" rel="alternate" type="text/html" title="Blog Setup with Jekyll" /><published>2019-02-17T08:00:46+01:00</published><updated>2019-02-17T08:00:46+01:00</updated><id>https://www.lukas-jansen.de/projects/jekyll-setup</id><content type="html" xml:base="https://www.lukas-jansen.de/projects/jekyll-setup">&lt;p&gt;I thought the first project description should be my automatic jekyll page generation.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://www.lukas-jansen.de/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.lukas-jansen.de/" rel="alternate" type="text/html" /><updated>2020-07-03T12:09:34+02:00</updated><id>https://www.lukas-jansen.de/feed.xml</id><title type="html">Lukas Jansen</title><subtitle>The personal website of a life science student, struggling with books, apps, productivity, projects and general existence.</subtitle><author><name>Lukas Jansen</name><uri>https://www.ljansen.net</uri></author><entry><title type="html">Blog Setup with Jekyll</title><link href="https://www.lukas-jansen.de/projects/jekyll-setup" rel="alternate" type="text/html" title="Blog Setup with Jekyll" /><published>2019-02-17T08:00:46+01:00</published><updated>2019-02-17T08:00:46+01:00</updated><id>https://www.lukas-jansen.de/projects/jekyll-setup</id><content type="html" xml:base="https://www.lukas-jansen.de/projects/jekyll-setup">&lt;p&gt;I thought the first project description should be my automatic jekyll page generation.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-tho&quot;&gt;Why tho?&lt;/h2&gt;
-&lt;p&gt;At least &lt;strong&gt;20%&lt;/strong&gt; of the popular internet runs on WordPress. &lt;a href=&quot;#trendcms&quot;&gt;[1]&lt;/a&gt; Some years ago I hosted a WordPress blog on my server. It is really comfortable and configurable, the need for PHP and a DBS is also not a problem for anyone, you can set those up in minutes or just rent an inexpensive instance.&lt;/p&gt;
+&lt;p&gt;At least &lt;strong&gt;20%&lt;/strong&gt; of the popular internet runs on WordPress. &lt;a class=&quot;citation&quot; href=&quot;#trendcms&quot;&gt;[1]&lt;/a&gt; Some years ago I hosted a WordPress blog on my server. It is really comfortable and configurable, the need for PHP and a DBS is also not a problem for anyone, you can set those up in minutes or just rent an inexpensive instance.&lt;/p&gt;
 
-&lt;p&gt;The main opensource WordPress platform has been become quite hardened over time, but vulnerabilities in one of the over &lt;strong&gt;50.000&lt;/strong&gt; plugins (Feb19)&lt;a href=&quot;#wordpressplugins&quot;&gt;[2]&lt;/a&gt; get discovered almost monthly.  The only &lt;em&gt;dynamic&lt;/em&gt; part of a website I would be interested in, is a comment system, otherwise my site consists of static content.&lt;/p&gt;
+&lt;p&gt;The main opensource WordPress platform has been become quite hardened over time, but vulnerabilities in one of the over &lt;strong&gt;50.000&lt;/strong&gt; plugins (Feb19)&lt;a class=&quot;citation&quot; href=&quot;#wordpressplugins&quot;&gt;[2]&lt;/a&gt; get discovered almost monthly.  The only &lt;em&gt;dynamic&lt;/em&gt; part of a website I would be interested in, is a comment system, otherwise my site consists of static content.&lt;/p&gt;
 
 &lt;h2 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/jekylllogo.png&quot; alt=&quot;Jekyll logo&quot; class=&quot;align-right&quot; /&gt; While working on a pipeline to analyse methylome data I needed to document a lot of decisions and also wanted reports on the processed datasets. At the time I had already used Markdown (Cheatsheat &lt;a href=&quot;#markdown&quot;&gt;[3]&lt;/a&gt;) with &lt;a href=&quot;https://github.com/showdownjs/showdown&quot;&gt;Showdown&lt;/a&gt; and &lt;a href=&quot;https://rmarkdown.rstudio.com&quot;&gt;Rmarkdown&lt;/a&gt; to generate HTML pages and came acrosse the Jekyll Project. Jekyll is a Ruby program, which allows the creation of static blog-like-pages with the help of Markdown and &lt;a href=&quot;https://shopify.github.io/liquid/&quot;&gt;Liquid&lt;/a&gt;.
+&lt;p&gt;&lt;img src=&quot;/assets/images/jekylllogo.png&quot; alt=&quot;Jekyll logo&quot; class=&quot;align-right&quot; /&gt; While working on a pipeline to analyse methylome data I needed to document a lot of decisions and also wanted reports on the processed datasets. At the time I had already used Markdown (Cheatsheat &lt;a class=&quot;citation&quot; href=&quot;#markdown&quot;&gt;[3]&lt;/a&gt;) with &lt;a href=&quot;https://github.com/showdownjs/showdown&quot;&gt;Showdown&lt;/a&gt; and &lt;a href=&quot;https://rmarkdown.rstudio.com&quot;&gt;Rmarkdown&lt;/a&gt; to generate HTML pages and came acrosse the Jekyll Project. Jekyll is a Ruby program, which allows the creation of static blog-like-pages with the help of Markdown and &lt;a href=&quot;https://shopify.github.io/liquid/&quot;&gt;Liquid&lt;/a&gt;.
 Another really nice option is to use jekyll within a &lt;a href=&quot;https://pages.github.com&quot;&gt;Github Pages&lt;/a&gt; page, then they take of automatically building your page, but they limit the plugins you can use to the ones in this &lt;a href=&quot;https://github.com/github/pages-gem&quot;&gt;gem&lt;/a&gt;, this is the reason I use a different configuration.&lt;/p&gt;
 
 &lt;h3 id=&quot;installation&quot;&gt;Installation&lt;/h3&gt;
@@ -15,7 +15,7 @@ Another really nice option is to use jekyll within a &lt;a href=&quot;https://pa
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;ci-friendly-setup&quot;&gt;CI friendly Setup&lt;/h3&gt;
-&lt;p&gt;After looking at &lt;a href=&quot;http://jekyllthemes.org&quot;&gt;some themes&lt;/a&gt; I decided to use the MinimalMistakes Theme &lt;a href=&quot;#mmistakes&quot;&gt;[4]&lt;/a&gt;. I have been seeing it or a fork of it on some websites of researchers and liked the &lt;em&gt;minimal&lt;/em&gt; design, it is also very functional and well documented. To install it, make a new directory and create a file in it with the name &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and the following content:&lt;/p&gt;
+&lt;p&gt;After looking at &lt;a href=&quot;http://jekyllthemes.org&quot;&gt;some themes&lt;/a&gt; I decided to use the MinimalMistakes Theme &lt;a class=&quot;citation&quot; href=&quot;#mmistakes&quot;&gt;[4]&lt;/a&gt;. I have been seeing it or a fork of it on some websites of researchers and liked the &lt;em&gt;minimal&lt;/em&gt; design, it is also very functional and well documented. To install it, make a new directory and create a file in it with the name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt; and the following content:&lt;/p&gt;
 
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;https://rubygems.org&quot;&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# To upgrade, run `bundle update`.&lt;/span&gt;
@@ -38,8 +38,8 @@ group :jekyll_plugins &lt;span class=&quot;k&quot;&gt;do
 end
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You will also need the default jekyll/minimalmistakes &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yaml&lt;/code&gt;file, which you can download from the repository:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/_config.yml
+&lt;p&gt;You will also need the default jekyll/minimalmistakes &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yaml&lt;/code&gt;file, which you can download from the repository:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;wget https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/_config.yml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;In this file add:&lt;/p&gt;
@@ -48,15 +48,15 @@ end
 &lt;span class=&quot;na&quot;&gt;destination&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;_site&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This means that jekyll will read the input file from the &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; directory and store the resulting html pages in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_site&lt;/code&gt; directory.
-To create the directory structure in the &lt;code class=&quot;highlighter-rouge&quot;&gt;src&lt;/code&gt; directory:&lt;/p&gt;
+&lt;p&gt;This means that jekyll will read the input file from the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; directory and store the resulting html pages in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_site&lt;/code&gt; directory.
+To create the directory structure in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; directory:&lt;/p&gt;
 &lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll new &lt;span class=&quot;nt&quot;&gt;--skip-bundle&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--blank&lt;/span&gt; src
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;example-post-and-page&quot;&gt;Example post and page&lt;/h3&gt;
 &lt;p&gt;Now you can create posts and pages.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src/index.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src/index.html&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;home&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;author_profile&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;true&lt;/span&gt; 
@@ -64,7 +64,7 @@ To create the directory structure in the &lt;code class=&quot;highlighter-rouge&
 Hi!
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src/_pages/about.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src/_pages/about.md&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;About me&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;single&lt;/span&gt;
@@ -75,7 +75,7 @@ Hi!
  You can create a 404 page in app/_pages/404.md
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;src/_posts/2019-02-017-namestartshere.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src/_posts/2019-02-017-namestartshere.md&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;language-md highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;This&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;is&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;title&quot;&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# The post will only be build into the page, &lt;/span&gt;
@@ -108,13 +108,13 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
 &lt;p&gt;&lt;img src=&quot;/assets/images/jekyllresult.png&quot; alt=&quot;Example post&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;travis-ci-autobuild&quot;&gt;Travis CI Autobuild&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/TravisCI-Mascot-1.png&quot; alt=&quot;Jekyll logo&quot; class=&quot;align-right&quot; /&gt;You can host your version control on &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;, that allows you to use &lt;a href=&quot;https://travis-ci.com&quot;&gt;Travis CI&lt;/a&gt; to automatically build and publish it. Thanks to the cron function of Travis CI, it is also possible to have a working planned publish system with the &lt;code class=&quot;highlighter-rouge&quot;&gt;date: ....&lt;/code&gt; option. Travis CI has two websites travis-ci.com and .org, in the future, .org will be merged with .com, so use &lt;a href=&quot;https://travis-ci.com&quot;&gt;.com&lt;/a&gt;. &lt;a href=&quot;#travis&quot;&gt;[5]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/TravisCI-Mascot-1.png&quot; alt=&quot;Jekyll logo&quot; class=&quot;align-right&quot; /&gt;You can host your version control on &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;, that allows you to use &lt;a href=&quot;https://travis-ci.com&quot;&gt;Travis CI&lt;/a&gt; to automatically build and publish it. Thanks to the cron function of Travis CI, it is also possible to have a working planned publish system with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;date: ....&lt;/code&gt; option. Travis CI has two websites travis-ci.com and .org, in the future, .org will be merged with .com, so use &lt;a href=&quot;https://travis-ci.com&quot;&gt;.com&lt;/a&gt;. &lt;a class=&quot;citation&quot; href=&quot;#travis&quot;&gt;[5]&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;If you plan to make it your personal site, don’t use your &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repositories master branch, as you have to use this branch for the html files, but you can use a new branch.&lt;/p&gt;
+&lt;p&gt;If you plan to make it your personal site, don’t use your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;username&amp;gt;.github.io&lt;/code&gt; repositories master branch, as you have to use this branch for the html files, but you can use a new branch.&lt;/p&gt;
 
-&lt;p&gt;I use the jekyll-github-deploy Ruby script, look at the project README for all the options.&lt;a href=&quot;#jgd&quot;&gt;[6]&lt;/a&gt; You could replace it with a build script.&lt;/p&gt;
+&lt;p&gt;I use the jekyll-github-deploy Ruby script, look at the project README for all the options.&lt;a class=&quot;citation&quot; href=&quot;#jgd&quot;&gt;[6]&lt;/a&gt; You could replace it with a build script.&lt;/p&gt;
 
-&lt;p&gt;The build is defined in the &lt;code class=&quot;highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; file in the root of the repo: &lt;a href=&quot;#jekylltravis&quot;&gt;[7]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The build is defined in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; file in the root of the repo: &lt;a class=&quot;citation&quot; href=&quot;#jekylltravis&quot;&gt;[7]&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ruby&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
 &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2.4.1&lt;/span&gt;
@@ -167,7 +167,7 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;You can create a GitHub access token &lt;a href=&quot;https://github.com/settings/tokens&quot;&gt;here&lt;/a&gt;. It only needs the &lt;code class=&quot;highlighter-rouge&quot;&gt;public_repo&lt;/code&gt; permission.
+&lt;p&gt;You can create a GitHub access token &lt;a href=&quot;https://github.com/settings/tokens&quot;&gt;here&lt;/a&gt;. It only needs the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public_repo&lt;/code&gt; permission.
 &lt;img src=&quot;/assets/images/ghtoken.png&quot; alt=&quot;Github Token Creation&quot; class=&quot;align-center&quot; /&gt;
 Never publish credentials in public visible repositories, you need to &lt;a href=&quot;https://docs.travis-ci.com/user/encryption-keys/&quot;&gt;encrypt those for Travis CI&lt;/a&gt;.&lt;/p&gt;
 
@@ -181,13 +181,13 @@ Never publish credentials in public visible repositories, you need to &lt;a href
 &lt;p&gt;&lt;a href=&quot;https://www.maximumfun.org/shows/adventure-zone&quot;&gt;The AdventureZone Podcast&lt;/a&gt;. The McElroy family (My Brother, My Brother and Me) playing RPG tabletop games.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;trendcms&quot;&gt;[1]BuiltWith Pty Ltd, “CMS Usage Distribution in the Top 1 Million Sites.” 2019 [Online]. Available at: &lt;a href=&quot;https://trends.builtwith.com/cms&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;wordpressplugins&quot;&gt;[2]Wordpress.org, “WordPress Plugins.” 2019 [Online]. Available at: &lt;a href=&quot;https://wordpress.org/plugins/&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;markdown&quot;&gt;[3]A. Pritchard, “Markdown Cheatsheet.” 2017 [Online]. Available at: &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;mmistakes&quot;&gt;[4]M. Rose, “Minimal Mistakes - A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.” 2019 [Online]. Available at: &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/#&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;travis&quot;&gt;[5]J. Kalderimis, “Announcing support for open source projects on travis-ci.com.” 2018 [Online]. Available at: &lt;a href=&quot;https://blog.travis-ci.com/2018-05-02-open-source-projects-on-travis-ci-com-with-github-apps&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;jgd&quot;&gt;[6]Y. Bugayenko, “jekyll-github-deploy.” 2018 [Online]. Available at: &lt;a href=&quot;https://github.com/yegor256/jekyll-github-deploy&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;span id=&quot;jekylltravis&quot;&gt;[7]JekyllRb, “ Jekyll - Travis CI .” 2019 [Online]. Available at: &lt;a href=&quot;https://jekyllrb.com/docs/continuous-integration/travis-ci/&quot;&gt;Link&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</content><author><name>Lukas Jansen</name><uri>https://www.ljansen.net</uri></author><category term="Project Finish" /><category term="Website" /><summary type="html">I thought the first project description should be my automatic jekyll page generation.</summary></entry><entry><title type="html">Hello (maybe simulated) World!</title><link href="https://www.lukas-jansen.de/personal/hello-world" rel="alternate" type="text/html" title="Hello (maybe simulated) World!" /><published>2019-02-17T00:00:46+01:00</published><updated>2019-02-17T00:00:46+01:00</updated><id>https://www.lukas-jansen.de/personal/hello-world</id><content type="html" xml:base="https://www.lukas-jansen.de/personal/hello-world">&lt;p&gt;This year marks the start of my personal website and blog.&lt;/p&gt;
+&lt;ol class=&quot;bibliography&quot;&gt;&lt;li&gt;&lt;span id=&quot;trendcms&quot;&gt;[1]BuiltWith Pty Ltd, “CMS Usage Distribution in the Top 1 Million Sites.” 2019 [Online]. Available at: &lt;a href=&quot;https://trends.builtwith.com/cms&quot;&gt;Link&lt;/a&gt;. [Accessed: 17-Feb-2019]&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;wordpressplugins&quot;&gt;[2]Wordpress.org, “WordPress Plugins.” 2019 [Online]. Available at: &lt;a href=&quot;https://wordpress.org/plugins/&quot;&gt;Link&lt;/a&gt;. [Accessed: 17-Feb-2019]&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;markdown&quot;&gt;[3]A. Pritchard, “Markdown Cheatsheet.” 2017 [Online]. Available at: &lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot;&gt;Link&lt;/a&gt;. [Accessed: 17-Feb-2019]&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;mmistakes&quot;&gt;[4]M. Rose, “Minimal Mistakes - A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.” 2019 [Online]. Available at: &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/#&quot;&gt;Link&lt;/a&gt;. [Accessed: 17-Feb-2019]&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;travis&quot;&gt;[5]J. Kalderimis, “Announcing support for open source projects on travis-ci.com.” 2018 [Online]. Available at: &lt;a href=&quot;https://blog.travis-ci.com/2018-05-02-open-source-projects-on-travis-ci-com-with-github-apps&quot;&gt;Link&lt;/a&gt;. [Accessed: 17-Feb-2019]&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;jgd&quot;&gt;[6]Y. Bugayenko, “jekyll-github-deploy.” 2018 [Online]. Available at: &lt;a href=&quot;https://github.com/yegor256/jekyll-github-deploy&quot;&gt;Link&lt;/a&gt;. [Accessed: 17-Feb-2019]&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span id=&quot;jekylltravis&quot;&gt;[7]JekyllRb, “ Jekyll - Travis CI .” 2019 [Online]. Available at: &lt;a href=&quot;https://jekyllrb.com/docs/continuous-integration/travis-ci/&quot;&gt;Link&lt;/a&gt;. [Accessed: 17-Feb-2019]&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;</content><author><name>Lukas Jansen</name><uri>https://www.ljansen.net</uri></author><category term="Projects" /><category term="Project Finish" /><category term="Website" /><summary type="html">I thought the first project description should be my automatic jekyll page generation.</summary></entry><entry><title type="html">Hello (maybe simulated) World!</title><link href="https://www.lukas-jansen.de/personal/hello-world" rel="alternate" type="text/html" title="Hello (maybe simulated) World!" /><published>2019-02-17T00:00:46+01:00</published><updated>2019-02-17T00:00:46+01:00</updated><id>https://www.lukas-jansen.de/personal/hello-world</id><content type="html" xml:base="https://www.lukas-jansen.de/personal/hello-world">&lt;p&gt;This year marks the start of my personal website and blog.&lt;/p&gt;
 
 &lt;p&gt;So: &lt;strong&gt;Happy new Year!&lt;/strong&gt;&lt;/p&gt;
 
@@ -210,4 +210,4 @@ and helps other people profiting from it.&lt;/li&gt;
 
 &lt;p&gt;Something nice for you to check out:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=cZYNADOHhVY&quot;&gt;A video&lt;/a&gt; by the YouTube educational channel CGPGrey based on a paper Nick Bostrom telling a fable dealing with immortality research.&lt;/p&gt;</content><author><name>Lukas Jansen</name><uri>https://www.ljansen.net</uri></author><category term="Project Start" /><category term="Project Finish" /><summary type="html">This year marks the start of my personal website and blog.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=cZYNADOHhVY&quot;&gt;A video&lt;/a&gt; by the YouTube educational channel CGPGrey based on a paper Nick Bostrom telling a fable dealing with immortality research.&lt;/p&gt;</content><author><name>Lukas Jansen</name><uri>https://www.ljansen.net</uri></author><category term="Personal" /><category term="Project Start" /><category term="Project Finish" /><summary type="html">This year marks the start of my personal website and blog.</summary></entry></feed>

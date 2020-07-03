@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.15.1 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.19.3 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -12,6 +12,8 @@
 <!-- begin _includes/seo.html --><title>Hello (maybe simulated) World! - Lukas Jansen</title>
 <meta name="description" content="This year marks the start of my personal website and blog.">
 
+
+  <meta name="author" content="Lukas Jansen">
 
 
 <meta property="og:type" content="article">
@@ -38,6 +40,8 @@
   
 
   
+    <meta name="twitter:creator" content="@LukasJansen1997">
+  
 
 
 
@@ -57,19 +61,16 @@
 
 
 
-
-
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
       "@type": "Person",
       "name": "Lukas Jansen",
-      "url": "https://www.lukas-jansen.de",
-      "sameAs": null
-    }
-  </script>
-
+      "url": "https://www.lukas-jansen.de/"
+    
+  }
+</script>
 
 
 
@@ -91,7 +92,7 @@
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<!--[if IE ]>
+<!--[if IE]>
   <style>
     /* old IE unsupported flexbox fixes */
     .greedy-nav .site-title {
@@ -117,6 +118,14 @@
   </head>
 
   <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
@@ -129,17 +138,20 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-        <a class="site-title" href="/">Lukas Jansen</a>
+        <a class="site-title" href="/">
+          Lukas Jansen
+          
+        </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/" >Home</a>
+              <a href="/">Home</a>
             </li><li class="masthead__menu-item">
-              <a href="/about" >About me</a>
+              <a href="/about">About me</a>
             </li><li class="masthead__menu-item">
-              <a href="/assets/files/resume-lukasjansen.pdf" >Resume</a>
+              <a href="/assets/files/resume-lukasjansen.pdf">Resume</a>
             </li><li class="masthead__menu-item">
-              <a href="/categories" >Posts by Categories</a>
+              <a href="/categories">Posts by Categories</a>
             </li><li class="masthead__menu-item">
-              <a href="/tags" >Posts by Tags</a>
+              <a href="/tags">Posts by Tags</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -168,10 +180,11 @@
 <div id="main" role="main">
   
 
+
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="Hello (maybe simulated) World!">
     <meta itemprop="description" content="This year marks the start of my personal website and blog.">
-    <meta itemprop="datePublished" content="February 17, 2019">
+    <meta itemprop="datePublished" content="2019-02-17T00:00:46+01:00">
     
 
     <div class="page__inner-wrap">
@@ -186,6 +199,7 @@
 
 
   1 minute read
+
 </p>
           
         </header>
@@ -269,20 +283,17 @@ and helps other people profiting from it.</li>
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-02-17T00:00:46+01:00">February 17, 2019</time></p>
-        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-02-17T00:00:46+01:00">February 17, 2019</time></p>
+
+
       </footer>
 
       <section class="page__share">
-  
-    <h4 class="page__share-title">Share on</h4>
   
 
   <a href="https://twitter.com/intent/tweet?via=LukasJansen1997&text=Hello+%28maybe+simulated%29+World%21%20https%3A%2F%2Fwww.lukas-jansen.de%2Fpersonal%2Fhello-world" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.lukas-jansen.de%2Fpersonal%2Fhello-world" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.lukas-jansen.de%2Fpersonal%2Fhello-world" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
   <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.lukas-jansen.de%2Fpersonal%2Fhello-world" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
@@ -307,7 +318,7 @@ and helps other people profiting from it.</li>
   
   
     <div class="page__related">
-      <h4 class="page__related-title">You may also enjoy</h4>
+      <h4 class="page__related-title">You May Also Enjoy</h4>
       <div class="grid__wrapper">
         
           
@@ -330,10 +341,10 @@ and helps other people profiting from it.</li>
 
 
   6 minute read
+
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">I thought the first project description should be my automatic jekyll page generation.
-
 </p>
   </article>
 </div>
@@ -349,21 +360,24 @@ and helps other people profiting from it.</li>
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-    <div id="results" class="results"></div></div>
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
 
       </div>
     
 
-    <div class="page__footer">
+    <div id="footer" class="page__footer">
       <footer>
         <!-- start custom footer snippets -->
 
 <!-- end custom footer snippets -->
         <div class="page__footer-follow">
   <ul class="social-icons">
-    
-      <li><strong>Follow:</strong></li>
     
 
     
@@ -372,14 +386,14 @@ and helps other people profiting from it.</li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Lukas Jansen. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Lukas Jansen. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
     
   <script src="/assets/js/main.min.js"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.6.0/js/all.js" integrity="sha384-z9ZOvGHHo21RqN5De4rfJMoAxYpaVoiYhuJXPyVmSs8yn20IE3PmBM534CffwSJI" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
 
 
 
@@ -387,6 +401,8 @@ and helps other people profiting from it.</li>
 <script src="/assets/js/lunr/lunr.min.js"></script>
 <script src="/assets/js/lunr/lunr-store.js"></script>
 <script src="/assets/js/lunr/lunr-en.js"></script>
+
+
 
 
 
