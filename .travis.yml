@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.4.1
+- 2.6.3
 script: bundle exec jgd -b master -r dev -u https://${GH_TOKEN}@github.com/Finesim97/finesim97.github.io.git
 branches:
   only:
