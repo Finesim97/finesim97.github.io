@@ -15,8 +15,7 @@ These are the main reasons for me doing this in no particular order:
 - **Online presence**: Having a public persona is a requirement for almost anything in this day and age.
 - **Portofolio**: Talking about your great projects isn't enough, you need a central place to show them off.
 - **Writing practice**: Around 90% of the media I consume is in english, but I am really scared of my active english withering away.
-- **Project documentation**: A big part of maintaining a project and finishing it is having a clear documentation, which defines your goals
-and helps other people profiting from it. 
+- **Project documentation**: A big part of maintaining a project and finishing it is having a clear documentation, which defines your goals and helps other people profiting from it. 
 
 
 ## Who am I?

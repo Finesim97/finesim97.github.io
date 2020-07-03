@@ -31,6 +31,7 @@ source "https://rubygems.org"
 gem "jgd" # Automatic build and git deployment
 gem "jekyll" # Site Generation
 gem "minimal-mistakes-jekyll" # Theme
+gem "jemoji"
 # The following plugins are automatically loaded by the theme-gem:
 #   gem "jekyll-paginate"
 #   gem "jekyll-sitemap"
@@ -135,7 +136,7 @@ The build is defined in the `.travis.yml` file in the root of the repo: {%cite j
 ``` yml
 language: ruby
 rvm:
-- 2.4.1
+- 2.6.3
 script: bundle exec jgd -b TARGET_BRANCH -r SRC_BRANCH -u https://${GH_TOKEN}@github.com/USERNAME/REPO.git
 branches:
   only:

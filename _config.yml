@@ -106,8 +106,8 @@ analytics:
 author:
   name             : "Lukas Jansen"
   avatar           : "/assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "German life science university student in his 6th term studying bioinformatics"
-  location         : "Emden, Germany"
+  bio              : "Bachelor of Science in Biotechnology and Bioinformatics, currently looking for a Master study course."
+  location         : "Schortens, Germany"
   email            : 
   uri              : "https://www.ljansen.net"
 #  home             : # null (default), "absolute or relative url to link to author home"
