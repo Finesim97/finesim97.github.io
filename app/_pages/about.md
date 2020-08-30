@@ -9,13 +9,11 @@ Java SE, played around with Linux server administration and a little bit of elec
 > "[...] Students and teachers were impressed by his results [..]" - [Local Newspaper](https://www.nwzonline.de/friesland/bildung/eigene-wetterstation-im-zimmer_a_6,0,3558282676.html) on the presentation of my student research paper
 
 After finishing my A levels with an 1.5, I had decided to also include my love of the life sciences in my career and
-try to aqcuire practical wet lab experience, so I am currently studying biotechnology with a focus on bioinformatics at the
-University of Applied Science Emden/Leer. 
+try to aqcuire practical wet lab experience, so I studied Biotechnology with a focus on Bioinformatics at the
+University of Applied Sciences Emden/Leer.
 
 During my bachelor studies I have been working as a programming tutor since my second term, providing research assistance in projects to my professor since my 5th and lead the software development of the [HiveHealth project](https://www.hs-emden-leer.de/fachbereiche/technik/labore/fablab/projekte/hive-health/).
 
-Since finishing my own confirmation in our small parish back in Schortens, I have been active as a catechist and showed teenagers how to grow as a catholic and nerd today. 
+For my bachelor thesis I worked at the microbiology department of my university and developed pipelines to analyze SSU-rRNA reads and whole genome shotgun reads produced in the lab. This lead to my first [publication](https://pubmed.ncbi.nlm.nih.gov/32620171/). I finished my bachelor studies with a 1.42.
 
-> Don’t worry. I’ve got a plan….Well, I will have by the time we get to the top. - *The 13th doctor*
-
-
+To accquire more knowledge in the field of data analysis, especially machine learning and big data, I enrolled at the Data Science MSc programme at the Hochschule Darmstadt (h_da).
