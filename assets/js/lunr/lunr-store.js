@@ -10,4 +10,10 @@ var store = [{
         "tags": ["Project Finish","Website"],
         "url": "https://www.lukas-jansen.de/projects/jekyll-setup",
         "teaser": null
+      },{
+        "title": "Docker Basics",
+        "excerpt":"The creation of a data science work environment based on Docker-Compose and web browser access. Next month I will start to work on my master degree in data science. For my bachelor thesis I invested into a EPYC based server with 256 GB RAM. I want to use this to...","categories": ["Projects"],
+        "tags": ["Project Start","Docker","Data Science"],
+        "url": "https://www.lukas-jansen.de/projects/web-datascience",
+        "teaser": null
       }]

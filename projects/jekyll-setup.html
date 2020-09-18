@@ -263,6 +263,7 @@ Another really nice option is to use jekyll within a <a href="https://pages.gith
 gem <span class="s2">"jgd"</span> <span class="c"># Automatic build and git deployment</span>
 gem <span class="s2">"jekyll"</span> <span class="c"># Site Generation</span>
 gem <span class="s2">"minimal-mistakes-jekyll"</span> <span class="c"># Theme</span>
+gem <span class="s2">"jemoji"</span>
 <span class="c"># The following plugins are automatically loaded by the theme-gem:</span>
 <span class="c">#   gem "jekyll-paginate"</span>
 <span class="c">#   gem "jekyll-sitemap"</span>
@@ -358,7 +359,7 @@ bundle <span class="nb">exec </span>jekyll serve
 <p>The build is defined in the <code class="language-plaintext highlighter-rouge">.travis.yml</code> file in the root of the repo: <a class="citation" href="#jekylltravis">[7]</a></p>
 <div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">language</span><span class="pi">:</span> <span class="s">ruby</span>
 <span class="na">rvm</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="s">2.4.1</span>
+<span class="pi">-</span> <span class="s">2.6.3</span>
 <span class="na">script</span><span class="pi">:</span> <span class="s">bundle exec jgd -b TARGET_BRANCH -r SRC_BRANCH -u https://${GH_TOKEN}@github.com/USERNAME/REPO.git</span>
 <span class="na">branches</span><span class="pi">:</span>
   <span class="na">only</span><span class="pi">:</span>
@@ -504,7 +505,8 @@ Never publish credentials in public visible repositories, you need to <a href="h
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="/projects/web-datascience" class="pagination--pager" title="Docker Basics
+">Next</a>
     
   </nav>
 
@@ -518,6 +520,46 @@ Never publish credentials in public visible repositories, you need to <a href="h
     <div class="page__related">
       <h4 class="page__related-title">You May Also Enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/projects/web-datascience" rel="permalink">Docker Basics
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+
+    
+
+    
+
+    
+      
+      
+
+      <i class="far fa-clock" aria-hidden="true"></i>
+      
+        6 minute read
+      
+    
+
+  </p>
+
+    <p class="archive__item-excerpt" itemprop="description">The creation of a data science work environment based on Docker-Compose and web browser access.
+</p>
+  </article>
+</div>
+
         
           
 

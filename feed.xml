@@ -1,4 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://www.lukas-jansen.de/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.lukas-jansen.de/" rel="alternate" type="text/html" /><updated>2020-09-18T17:50:49+02:00</updated><id>https://www.lukas-jansen.de/feed.xml</id><title type="html">Lukas Jansen</title><subtitle>The personal website of a life science student, struggling with books, apps, productivity, projects and general existence.</subtitle><author><name>Lukas Jansen</name><uri>https://www.lukas-jansen.de</uri></author><entry><title type="html">Blog Setup with Jekyll</title><link href="https://www.lukas-jansen.de/projects/jekyll-setup" rel="alternate" type="text/html" title="Blog Setup with Jekyll" /><published>2019-02-17T08:00:46+01:00</published><updated>2019-02-17T08:00:46+01:00</updated><id>https://www.lukas-jansen.de/projects/jekyll-setup</id><content type="html" xml:base="https://www.lukas-jansen.de/projects/jekyll-setup">&lt;p&gt;I thought the first project description should be my automatic jekyll page generation.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://www.lukas-jansen.de/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.lukas-jansen.de/" rel="alternate" type="text/html" /><updated>2020-09-18T19:53:43+02:00</updated><id>https://www.lukas-jansen.de/feed.xml</id><title type="html">Lukas Jansen</title><subtitle>The personal website of a life science student, struggling with books, apps, productivity, projects and general existence.</subtitle><author><name>Lukas Jansen</name><uri>https://www.lukas-jansen.de</uri></author><entry><title type="html">Docker Basics</title><link href="https://www.lukas-jansen.de/projects/web-datascience" rel="alternate" type="text/html" title="Docker Basics" /><published>2020-09-18T18:00:46+02:00</published><updated>2020-09-18T18:00:46+02:00</updated><id>https://www.lukas-jansen.de/projects/web-datascience</id><content type="html" xml:base="https://www.lukas-jansen.de/projects/web-datascience">&lt;p&gt;The creation of a data science work environment based on &lt;a href=&quot;https://docs.docker.com/compose/&quot;&gt;Docker-Compose&lt;/a&gt; and web browser access.&lt;/p&gt;
+
+&lt;p&gt;Next month I will start to work on my &lt;a href=&quot;https://h-da.de/studium/studienangebot/studiengaenge/naturwissenschaft-und-mathematik/data-science-msc/&quot;&gt;master degree in data science&lt;/a&gt;. For my bachelor thesis I invested into a EPYC based server with 256 GB RAM. I want to use this to run &lt;strong&gt;&lt;a href=&quot;https://jupyter.org/&quot;&gt;Jupyter&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a href=&quot;https://rstudio.com/&quot;&gt;RStudio Server&lt;/a&gt;&lt;/strong&gt; and &lt;strong&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This post will focus on the basics of Docker and Docker-Compose.&lt;/p&gt;
+
+&lt;h3 id=&quot;docker&quot;&gt;Docker&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.docker.com/&quot;&gt;Docker&lt;/a&gt; is a container engine, which allows you to isolate processes and their enviroments into units, called containers. No virtualization takes place!&lt;/p&gt;
+
+&lt;p&gt;A Docker container is defined through the &lt;a href=&quot;https://docs.docker.com/engine/reference/builder/&quot;&gt;Dockerfile&lt;/a&gt;, which builds containers from &lt;strong&gt;images&lt;/strong&gt; using a &lt;a href=&quot;https://docs.docker.com/storage/storagedriver/&quot;&gt;&lt;em&gt;layered&lt;/em&gt; read-only filesystem&lt;/a&gt;. For example, if you base multiple images on the same Ubuntu version, Docker only needs to store this base filesystem &lt;strong&gt;once&lt;/strong&gt;. Every step in the Dockerfile can be cached as a layer, allowing quicker builds of images.&lt;/p&gt;
+
+&lt;p&gt;When you destroy (&lt;em&gt;down&lt;/em&gt;) a container all the data it created &lt;strong&gt;is lost&lt;/strong&gt;, because it isn’t included in the image. &lt;a href=&quot;https://docs.docker.com/storage/volumes/&quot;&gt;&lt;strong&gt;Volumes&lt;/strong&gt;&lt;/a&gt; allow the &lt;strong&gt;persistent storage&lt;/strong&gt; of data files across container creations (&lt;em&gt;up&lt;/em&gt;) and destructions. Volumes can be for example named or &lt;a href=&quot;https://docs.docker.com/storage/bind-mounts/&quot;&gt;&lt;strong&gt;bound&lt;/strong&gt;&lt;/a&gt; onto a the host file system.&lt;/p&gt;
+
+&lt;h3 id=&quot;docker-compose&quot;&gt;Docker-Compose&lt;/h3&gt;
+
+&lt;p&gt;Docker-Compose is a container orchestration program that allows you to define and configure containers to provide services and connect them to each other. Those services are defined in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;p&gt;To install Docker and and Docker-Compose follow &lt;a href=&quot;https://docs.docker.com/engine/install/&quot;&gt;these&lt;/a&gt; and &lt;a href=&quot;https://docs.docker.com/compose/install/&quot;&gt;these&lt;/a&gt; instructions.&lt;/p&gt;
+
+&lt;h2 id=&quot;docker-tutorial&quot;&gt;Docker Tutorial&lt;/h2&gt;
+
+&lt;p&gt;When you successfully installed Docker, you should be able to create your first container.&lt;/p&gt;
+
+&lt;h3 id=&quot;running-an-interactive-container&quot;&gt;Running an interactive container&lt;/h3&gt;
+
+&lt;p&gt;We will create a Ubuntu container and run a Bash session in it, as suggested by the documentation:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; ubuntu bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The flags &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-i&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-t&lt;/code&gt; are necessary for running a container which needs to have a open &lt;a href=&quot;https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)&quot;&gt;STDIN&lt;/a&gt; and &lt;a href=&quot;https://unix.stackexchange.com/a/5443&quot;&gt;TTY&lt;/a&gt;.  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ubuntu&lt;/code&gt; is the name of the image you want to use for our container and after that follows the command you want to run to start the container process.&lt;/p&gt;
+
+&lt;p&gt;While you are exploring the filesystem, you will see a complete Ubuntu directory tree seperate from your host system. A quick &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ps aux&lt;/code&gt; reveals that Bash is the process running as this container.&lt;/p&gt;
+
+&lt;p&gt;Listing the running containers on the host will show the Ubuntu container:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker container &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# or&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker ps
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+175e2afff02a        ubuntu              &quot;bash&quot;              8 minutes ago       Up 8 minutes                            tender_galois
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The name &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tender_galois&lt;/code&gt; was automatically generated, you can use a custom name with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--name NAME&lt;/code&gt; argument.&lt;/p&gt;
+
+&lt;p&gt;It is possible to list your current downloaded images using the following command:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker images
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              4e2eef94cd6b        10 days ago         73.9MB
+hello-world         latest              bf756fb1ae65        8 months ago        13.3kB
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Whenyou exit the Bash session (just run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;exit&lt;/code&gt; or Ctrl+D, which sends a EOF to STDIN), the container will be stopped. When listing all containers with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo docker container ls --all&lt;/code&gt; it will be still visibile.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-txt&quot;&gt;CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+175e2afff02a        ubuntu              &quot;bash&quot;              18 minutes ago      Exited (0) 3 minutes ago                        tender_galois
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;To restart the container and attach your terminals standard streams (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-a&lt;/code&gt; for STDOUT/ERR and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-i&lt;/code&gt; for STDIN) use the following command. You can either refer to the name or id. It is also ok to use partial ids.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker start &lt;span class=&quot;nt&quot;&gt;-ia&lt;/span&gt; 17
+&lt;span class=&quot;c&quot;&gt;# or&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker start &lt;span class=&quot;nt&quot;&gt;-ia&lt;/span&gt; tender_galois
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It is also possible to leave the container running while just detaching from it, the default sequence for this is &lt;strong&gt;Ctrl+p&lt;/strong&gt; followed by &lt;strong&gt;Ctrl+q&lt;/strong&gt;. You can reattach it using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker attach 17&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;The container can be destroyed with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rm&lt;/code&gt; subcommand.&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker &lt;span class=&quot;nb&quot;&gt;rm &lt;/span&gt;tender_galois
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;running-a-web-service-container&quot;&gt;Running a web service container&lt;/h3&gt;
+
+&lt;p&gt;In this section we will use Docker to run a web service from a custom container.&lt;/p&gt;
+
+&lt;p&gt;This will be our PHP web app, save it as “index.php” in a directory called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;webapp&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot;
+  &quot;http://www.w3.org/TR/html4/strict.dtd&quot;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Hello from &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;gethostname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;p&amp;gt;Hello World&amp;lt;/p&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;$date&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'d-m-y h:i:s'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;It is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$date&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;!&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is a possible &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-dockerfile highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Base this image on the php with apache image&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;FROM&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; php:7.2-apache&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# Copy the app&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;COPY&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; webapp/ /var/www/html/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-tree&quot;&gt;.
+├── Dockerfile
+└── webapp
+    └── index.php
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The image can be build with:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker build &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; tutorial/webapp &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A complete rebuild can be triggered with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--no-cache&lt;/code&gt; flag. To start this container detached, you can use the following command:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; webappcontainer tutorial/webapp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We can get the IP adress of the container (Only accessible from the host machine) with this command:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker inspect &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}'&lt;/span&gt; webappcontainer
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You should be able to open the IP in your web browser or use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;wget&lt;/code&gt; on it. To use port forwarding from the host machine, you can expose this port while starting the container.  The format for the argument is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-p [hostip:]host_port:container_port&lt;/code&gt;. The host ip is optional, without it, the container will answer all requests to this port. This redirection uses iptables and can &lt;a href=&quot;https://www.techrepublic.com/article/how-to-fix-the-docker-and-ufw-security-flaw/&quot;&gt;overwrite certain firewalls&lt;/a&gt; (e. g. ufw).&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Stop and remove the old container:&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker stop webappcontainer &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker &lt;span class=&quot;nb&quot;&gt;rm &lt;/span&gt;webappcontainer
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; webappcontainer &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 127.0.0.1:8080:80 tutorial/webapp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://localhost:8080&lt;/code&gt; should work as the web address.&lt;/p&gt;
+
+&lt;h3 id=&quot;docker-compose-1&quot;&gt;Docker Compose&lt;/h3&gt;
+
+&lt;p&gt;You can define our web app in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file. An example follows:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;2&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;webapp&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# service name, not container name&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;127.0.0.1:8080:80&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Docker-Compose uses the name of the directory where the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file is located as a prefix for naming containers, volumes and networks. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;up&lt;/code&gt; subcommand creates and starts the containers specified in the file. To start the containers detached, you use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-d&lt;/code&gt; flag:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker-compose up &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Using the docker-compose command you can interact with all containers defined in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; file. Some examples:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker-compose ps
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker-compose logs
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker-compose restart webapp
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker-compose stop webapp
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;docker-compose start webapp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The containers from the file can be destroyed with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo docker-compose down&lt;/code&gt;. Instead of using the default network, which connects the docker containers together, it creates one for the containers in the compose file. The webapp would be reachable under the hostname “webapp” by other containers in the same compose file. Exposed ports are defined in the Dockerfile, they are always accessible to the connected containers, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-p&lt;/code&gt; flag and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ports:&lt;/code&gt; config redirect container ports from the host!&lt;/p&gt;</content><author><name>Lukas Jansen</name><uri>https://www.lukas-jansen.de</uri></author><category term="Projects" /><category term="Project Start" /><category term="Docker" /><category term="Data Science" /><summary type="html">The creation of a data science work environment based on Docker-Compose and web browser access.</summary></entry><entry><title type="html">Blog Setup with Jekyll</title><link href="https://www.lukas-jansen.de/projects/jekyll-setup" rel="alternate" type="text/html" title="Blog Setup with Jekyll" /><published>2019-02-17T08:00:46+01:00</published><updated>2019-02-17T08:00:46+01:00</updated><id>https://www.lukas-jansen.de/projects/jekyll-setup</id><content type="html" xml:base="https://www.lukas-jansen.de/projects/jekyll-setup">&lt;p&gt;I thought the first project description should be my automatic jekyll page generation.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-tho&quot;&gt;Why tho?&lt;/h2&gt;
 &lt;p&gt;At least &lt;strong&gt;20%&lt;/strong&gt; of the popular internet runs on WordPress. &lt;a class=&quot;citation&quot; href=&quot;#trendcms&quot;&gt;[1]&lt;/a&gt; Some years ago I hosted a WordPress blog on my server. It is really comfortable and configurable, the need for PHP and a DBS is also not a problem for anyone, you can set those up in minutes or just rent an inexpensive instance.&lt;/p&gt;
@@ -22,6 +192,7 @@ Another really nice option is to use jekyll within a &lt;a href=&quot;https://pa
 gem &lt;span class=&quot;s2&quot;&gt;&quot;jgd&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Automatic build and git deployment&lt;/span&gt;
 gem &lt;span class=&quot;s2&quot;&gt;&quot;jekyll&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Site Generation&lt;/span&gt;
 gem &lt;span class=&quot;s2&quot;&gt;&quot;minimal-mistakes-jekyll&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Theme&lt;/span&gt;
+gem &lt;span class=&quot;s2&quot;&gt;&quot;jemoji&quot;&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# The following plugins are automatically loaded by the theme-gem:&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#   gem &quot;jekyll-paginate&quot;&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;#   gem &quot;jekyll-sitemap&quot;&lt;/span&gt;
@@ -117,7 +288,7 @@ bundle &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
 &lt;p&gt;The build is defined in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; file in the root of the repo: &lt;a class=&quot;citation&quot; href=&quot;#jekylltravis&quot;&gt;[7]&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;language&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;ruby&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;rvm&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2.4.1&lt;/span&gt;
+&lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;2.6.3&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bundle exec jgd -b TARGET_BRANCH -r SRC_BRANCH -u https://${GH_TOKEN}@github.com/USERNAME/REPO.git&lt;/span&gt;
 &lt;span class=&quot;na&quot;&gt;branches&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;only&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
@@ -199,8 +370,7 @@ These are the main reasons for me doing this in no particular order:&lt;/p&gt;
   &lt;li&gt;&lt;strong&gt;Online presence&lt;/strong&gt;: Having a public persona is a requirement for almost anything in this day and age.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Portofolio&lt;/strong&gt;: Talking about your great projects isn’t enough, you need a central place to show them off.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Writing practice&lt;/strong&gt;: Around 90% of the media I consume is in english, but I am really scared of my active english withering away.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Project documentation&lt;/strong&gt;: A big part of maintaining a project and finishing it is having a clear documentation, which defines your goals
-and helps other people profiting from it.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Project documentation&lt;/strong&gt;: A big part of maintaining a project and finishing it is having a clear documentation, which defines your goals and helps other people profiting from it.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;who-am-i&quot;&gt;Who am I?&lt;/h2&gt;
