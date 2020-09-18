@@ -1,0 +1,43 @@
+version: "2"
+
+services:
+   juypter:
+      image: "jupyter/datascience-notebook"
+      environment:
+         - "JUPYTER_ENABLE_LAB=no" # set to yes for Lab
+      volumes:
+         - "./workdata:/home/jovyan/work"
+      #command: "start-notebook.sh --NotebookApp.password='sha1:'" # Custom password
+      labels:
+         - "traefik.http.routers.jupyter.rule=PathPrefix(`/jupyter`)"
+         - "traefik.http.routers.jupyter.middlewares=jupyter-stripprefix"
+         - "traefik.http.middlewares.jupyter-stripprefix.stripprefix.prefixes=/jupyter"
+         - "traefik.http.services.jupyter.loadbalancer.server.port=8888"
+         - "traefik.enable=true"
+         - "traefik.http.routers.jupyter.entrypoints=web"
+
+   rstudio:
+      image: "rocker/rstudio"
+      environment:
+         - "PASSWORD=paswordhere"
+         - "GROUPID=100"
+      volumes:
+         - "./workdata:/home/rstudio/work"
+      labels:
+         - "traefik.http.routers.rstudio.rule=PathPrefix(`/rstudio`)"
+         - "traefik.http.routers.rstudio.middlewares=rstudio-stripprefix"
+         - "traefik.http.middlewares.rstudio-stripprefix.stripprefix.prefixes=/rstudio"
+         - "traefik.http.services.rstudio.loadbalancer.server.port=8787"
+         - "traefik.enable=true"
+         - "traefik.http.routers.rstudio.entrypoints=web"
+
+   reverse-proxy:
+      image: traefik:v2.2
+      command:
+         - "--providers.docker"
+         - "--providers.docker.exposedbydefault=false"
+         - "--entrypoints.web.address=:80"
+      ports:
+         - "80:80"
+      volumes:
+         - /var/run/docker.sock:/var/run/docker.sock
